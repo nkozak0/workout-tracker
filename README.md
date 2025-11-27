@@ -1,16 +1,95 @@
-# React + Vite
+🏋️‍♂️ AI-Powered Workout Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, offline-capable Progressive Web App (PWA) built to help you track workouts, visualize progress, and use AI to optimize your training.
 
-Currently, two official plugins are available:
+✨ Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🤖 AI Integration (Gemini)
 
-## React Compiler
+Smart Routine Builder: Type a goal (e.g., "Leg day for mass") and the AI generates a full routine with exercises, set/rep targets, and form notes.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Adaptive Rest Timers: The AI analyzes your specific exercises to suggest optimal rest times (e.g., 3 mins for Squats, 90s for Curls).
 
-## Expanding the ESLint configuration
+Progress Insights: Get AI-generated feedback on your lifting consistency and strength trends.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📝 Routine Management
+
+Custom Targets: Support for range-based targets (e.g., "3-4 sets", "8-12 reps").
+
+Notes System: Add specific notes to routines or individual exercises (e.g., "Use the green band").
+
+Edit & Organize: easily edit, delete, or reorder your routines.
+
+⚡ Active Workout Mode
+
+Live Logging: Log weight and reps in real-time.
+
+History Comparison: See exactly what you lifted last time right next to your current input to ensure Progressive Overload.
+
+Auto-Rest Timer: Timer starts automatically when you complete a set.
+
+Minimize Mode: Minimize the active workout to check your history or progress charts without cancelling the session.
+
+Safety Modals: Confirmation pop-ups prevent accidental cancellations or deletions.
+
+📱 Mobile Ready (PWA)
+
+Installable: Add to home screen on iOS and Android.
+
+Offline Capable: Works even in gyms with poor signal.
+
+Native Feel: Full-screen experience without browser bars.
+
+🛠️ Tech Stack
+
+Framework: React + Vite
+
+Styling: Tailwind CSS
+
+Icons: Lucide React
+
+Database: Google Firebase (Firestore & Auth)
+
+AI Model: Google Gemini API
+
+Charts: Recharts
+
+🚀 Getting Started
+
+1. Clone the repository
+
+git clone [https://github.com/YOUR_USERNAME/workout-tracker.git](https://github.com/YOUR_USERNAME/workout-tracker.git)
+cd workout-tracker
+
+
+2. Install dependencies
+
+npm install
+
+
+3. Configure Credentials
+
+Open src/App.jsx and find the firebaseConfig section.
+
+Replace the placeholder firebaseConfig object with your keys from the Firebase Console.
+
+Find the callGemini function and replace const apiKey = "" with your API key from Google AI Studio.
+
+4. Run Locally
+
+npm run dev
+
+
+📲 How to Install on Mobile
+
+Deploy the app (e.g., using Vercel or Netlify).
+
+Open the website on your phone.
+
+iOS: Tap Share (Square with arrow) -> Add to Home Screen.
+
+Android: Tap Menu (Three dots) -> Install App.
+
+📄 License
+
+Distributed under the MIT License.
